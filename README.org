@@ -1,0 +1,79 @@
+#+TITLE: pim layer
+
+# The maximum height of the logo should be 200 pixels.
+[[img/pim.png]]
+
+# TOC links should be GitHub style anchors.
+* Table of Contents                                        :TOC_4_gh:noexport:
+- [[#description][Description]]
+- [[#install][Install]]
+  - [[#1-download-layer][1. Download layer]]
+  - [[#2-customize--configure][2. Customize / Configure]]
+  - [[#3-load-layer][3. Load layer]]
+- [[#usage][Usage]]
+  - [[#email][Email]]
+  - [[#note-taking--workflow][Note taking / Workflow]]
+  - [[#blogging][Blogging]]
+    - [[#how-do-i-even][How do I even?]]
+
+* Description
+  This layer is for personal information management (pim) and sets up the following:
+  - =notmuch= (Email)
+  - =org= (Notes / Workflow)
+  - =org-octopress= (Blog)
+
+* Install
+
+** 1. Download layer
+
+  Add this repository to your spacemacs private folder as a submodule under the
+  folder =pim=:
+  
+  #+BEGIN_SRC shell
+  git submodule -b master add https://github.com/admiralakber/myOS-spacemacs-pim ~/.emacs.d/private/pim
+  #+END_SRC
+
+** 2. Customize / Configure
+
+  Edit [[file:config.el][=config.el=]] with your details.
+
+** 3. Load layer
+
+  To use this configuration layer, add it to your =~/.spacemacs=. You will need
+  to add =pim= to the existing =dotspacemacs-configuration-layers= list in this
+  file.
+
+* Usage
+
+** Email
+
+   This layer provides configuration for emacs to view / compose emails using
+   [[https://notmuchmail.org/notmuch-emacs/][notmuch-emacs]]. Sending, receiving and organising of these emails are done
+   independently. Setting up in this manner provides fantastic speed,
+   flexibility, and robustness.
+
+   For an example setup of email back end end see
+   [[https://github.com/admiralakber/myOS-email][github.com/admiralakber/myOS-email]]
+
+** Note taking / Workflow
+
+   More info coming:
+   =org=, =org-journal=, =org-crypt=, =org-trello=, =org-mind-map= 
+
+** Blogging
+
+   Going from an org file to a blog post is made easy with [[https://github.com/yoshinari-nomura/org-octopresshttps://github.com/yoshinari-nomura/org-octopresshttps://github.com/yoshinari-nomura/org-octopress][org-octopress]] using
+   jekyll to generate the blog.
+
+*** How do I even?
+
+   If you don't already have a blog, the easiest way to get started is with
+   [[https://pages.github.com/][Github Pages]] as it automatically compiles your page with jekyll. There are
+   plenty of tutorials on how to do this, the easiest way could even be looking
+   at other peoples =<username>.github.io= repositories. This repository will be
+   your =org-octopress-directory-top= variable defined in [[file:config.el][=config.el=]].
+
+   Keep in mind, jekyll is very flexible. If you're looking at other peoples
+   =github.io= repositories, or following tutorials they might not be using org
+   files to generate =_post= files. Once you're at this point, see the
+   [[https://github.com/yoshinari-nomura/org-octopress][org-octopress]] documentation or [[https://github.com/admiralakber/admiralakber.github.io][this github.io]] for an example.
