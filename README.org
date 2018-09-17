@@ -1,8 +1,5 @@
 #+TITLE: pim layer
 
-# The maximum height of the logo should be 200 pixels.
-[[img/pim.png]]
-
 # TOC links should be GitHub style anchors.
 * Table of Contents                                        :TOC_4_gh:noexport:
 - [[#description][Description]]
@@ -28,7 +25,7 @@
 
   Add this repository to your spacemacs private folder as a submodule under the
   folder =pim=:
-  
+
   #+BEGIN_SRC shell
   git submodule -b master add https://github.com/admiralakber/myOS-spacemacs-pim ~/.emacs.d/private/pim
   #+END_SRC
@@ -58,7 +55,7 @@
 ** Note taking / Workflow
 
    More info coming:
-   =org=, =org-journal=, =org-crypt=, =org-trello=, =org-mind-map= 
+   =org=, =org-journal=, =org-crypt=, =org-trello=, =org-mind-map=
 
 ** Blogging
 
