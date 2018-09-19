@@ -10,5 +10,5 @@
 (setq sendmail-program "msmtp-enqueue.sh")
 
 ;;; Blog / Directories
-(setq org-octopress-setup-file "~/Blog/setupfile.org")
 (setq org-octopress-directory-top "~/Blog/src")
+(setq org-octopress-setup-file (concat org-octopress-directory-top "/setupfile.org"))
