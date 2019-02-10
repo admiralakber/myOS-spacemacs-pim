@@ -4,8 +4,9 @@
     (notmuch :location elpa)
     (notmuch-pim :location local)
     ;; create
-    (org-journal :location melpa)
     (org-pim :location local)
+    (org-journal :location melpa)
+    (journal-pim :location local)
     ;; out
     (org-octopress :location elpa)
     (octopress-pim :location local)
@@ -35,4 +36,12 @@
 
 (defun pim/init-octopress-pim()
   (use-package octopress-pim
+    ))
+
+(defun pim/init-org-journal()
+  (use-package org-journal
+    ))
+
+(defun pim/init-journal-pim()
+  (use-package journal-pim
     ))
