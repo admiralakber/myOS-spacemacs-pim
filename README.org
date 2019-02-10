@@ -1,8 +1,5 @@
 #+TITLE: pim layer
 
-# The maximum height of the logo should be 200 pixels.
-[[img/pim.png]]
-
 # TOC links should be GitHub style anchors.
 * Table of Contents                                        :TOC_4_gh:noexport:
 - [[#description][Description]]
@@ -35,7 +32,7 @@
 
   #+BEGIN_SRC shell
   git submodule -b master add https://github.com/admiralakber/myOS-spacemacs-pim ~/.emacs.d/private/pim
-  #+END_SRC
+  #+END_SRChttps://github.com/bastibe/org-journal
 
 ** 2. IMPORTANT Customize / Configure
 
@@ -79,7 +76,7 @@
     | Key Binding | Description                     |
     |-------------+---------------------------------|
     | ~SPC m j j~ | new journal entry               |
-    | ~SPC m j n~ | next journal file               |
+    | ~SPC m j n~ | next journal file               |-
     | ~SPC m j p~ | previous journal file           |
     | ~SPC m j s~ | search the current journal file |
 
