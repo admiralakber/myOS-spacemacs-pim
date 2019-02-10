@@ -8,11 +8,14 @@
 - [[#description][Description]]
 - [[#install][Install]]
   - [[#1-download-layer][1. Download layer]]
-  - [[#2-customize--configure][2. Customize / Configure]]
+  - [[#2-important-customize--configure][2. IMPORTANT Customize / Configure]]
   - [[#3-load-layer][3. Load layer]]
 - [[#usage][Usage]]
   - [[#email][Email]]
-  - [[#note-taking--workflow][Note taking / Workflow]]
+  - [[#journal][Journal]]
+    - [[#global-bindings][Global Bindings]]
+    - [[#major-mode-bindings][Major Mode Bindings]]
+    - [[#calendar-mode-bindings][Calendar Mode Bindings]]
   - [[#blogging][Blogging]]
     - [[#how-do-i-even][How do I even?]]
 
@@ -21,6 +24,7 @@
   - =notmuch= (Email)
   - =org= (Notes / Workflow)
   - =org-octopress= (Blog)
+  - =org-journal= (Journal)
 
 * Install
 
@@ -28,12 +32,12 @@
 
   Add this repository to your spacemacs private folder as a submodule under the
   folder =pim=:
-  
+
   #+BEGIN_SRC shell
   git submodule -b master add https://github.com/admiralakber/myOS-spacemacs-pim ~/.emacs.d/private/pim
   #+END_SRC
 
-** 2. Customize / Configure
+** 2. IMPORTANT Customize / Configure
 
   Edit [[file:config.el][=config.el=]] with your details.
 
@@ -55,10 +59,42 @@
    For an example setup of email back end end see
    [[https://github.com/admiralakber/myOS-email][github.com/admiralakber/myOS-email]]
 
-** Note taking / Workflow
+** Journal
 
-   More info coming:
-   =org=, =org-journal=, =org-crypt=, =org-trello=, =org-mind-map= 
+   Org mode journaling is configured in org-pim and utilizes [[https://github.com/bastibe/org-journal][org-journal]].
+   Spacemacs like bindings are based off [[https://github.com/borgnix/spacemacs-journal/][borgnix's layer.]]
+
+   Prettier defaults (in my opinion) are configured in [[file:config.el][=config.el=]].
+
+   *You have no excuse, WRITE!*
+
+*** Global Bindings
+    | Key Binding | Description                                      |
+    |-------------+--------------------------------------------------|
+    | ~SPC a j j~ | new journal entry                                |
+    | ~SPC a j s~ | search all journal for a string                  |
+
+*** Major Mode Bindings
+
+    | Key Binding | Description                     |
+    |-------------+---------------------------------|
+    | ~SPC m j j~ | new journal entry               |
+    | ~SPC m j n~ | next journal file               |
+    | ~SPC m j p~ | previous journal file           |
+    | ~SPC m j s~ | search the current journal file |
+
+*** Calendar Mode Bindings
+    | Key Binding | Description                                |
+    |-------------+--------------------------------------------|
+    | ~J j~       | new journal entry                          |
+    | ~J v~       | view an entry in a new buffer              |
+    | ~J V~       | view an entry but do not switch to it      |
+    | ~J n~       | go to next day with journal entries        |
+    | ~J p~       | go to previous day with journal entries    |
+    | ~J S~       | search in all entries of all time          |
+    | ~J w~       | search in all entries of the current week  |
+    | ~J m~       | search in all entries of the current month |
+    | ~J y~       | search in all entries of the current year  |
 
 ** Blogging
 
