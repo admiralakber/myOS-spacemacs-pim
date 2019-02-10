@@ -5,6 +5,10 @@
     (notmuch-pim :location local)
     ;; create
     (org-pim :location local)
+    (org-journal :location (recipe
+                            :fetcher github
+                            :repo "bastibe/org-journal"))
+    (journal-pim :location local)
     ;; out
     (org-octopress :location elpa)
     (octopress-pim :location local)
@@ -34,4 +38,12 @@
 
 (defun pim/init-octopress-pim()
   (use-package octopress-pim
+    ))
+
+(defun pim/init-org-journal()
+  (use-package org-journal
+    ))
+
+(defun pim/init-journal-pim()
+  (use-package journal-pim
     ))

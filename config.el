@@ -11,4 +11,14 @@
 
 ;;; Blog / Directories
 (setq org-octopress-directory-top "~/Blog/src")
-(setq org-octopress-setup-file (concat org-octopress-directory-top "/setupfile.org"))
+
+;;; Journal
+(setq org-journal-dir "~/Journal/")
+(setq org-journal-date-format "<%Y-%m-%d> (%Y-%V-%u %j)")
+(setq org-journal-date-prefix (concat "#+TITLE: Journal Entry - " system-name "/\n"
+                                      "#+AUTHOR: " user-full-name "\n"
+                                      "#+FILETAGS: :" system-name ":journal:" "\n"
+                                      "#+DATE: "))
+(setq org-journal-time-format "Entry started %H:%M:%S%z\n  ")
+(setq org-journal-time-prefix "* ")
+(setq org-journal-enable-agenda-integration t)
