@@ -49,11 +49,11 @@
   )
 
 (use-package org-journal
+  :ensure t
   :init
   ;; global spacemacs
   (spacemacs/declare-prefix "aj" "journal")
   (spacemacs/set-leader-keys "ajj" 'org-journal-new-entry)
-  (spacemacs/set-leader-keys "ajv" 'view-journal)
   (spacemacs/set-leader-keys "ajs" 'org-journal-search)
   ;; journal major
   (spacemacs/set-leader-keys-for-major-mode 'org-journal-mode "jn" 'org-journal-open-next-entry)

@@ -15,6 +15,10 @@
 
 ;;; Journal
 (setq org-journal-dir "~/Journal/")
-(setq org-journal-date-format "Date: %Y-%m-%d [%Y-%W-%u %j]")
-(setq org-journal-time-format "Entry: %H:%M:%S%z")
+(setq org-journal-date-format "<%Y-%m-%d> %Y-%V-%u %j")
+(setq org-journal-date-prefix (concat "#+TITLE: Journal Entry - " system-name "/\n"
+                                      "#+AUTHOR: " user-full-name "\n"
+                                      "#+DATE: "))
+(setq org-journal-time-format "Entry started %H:%M:%S%z\n  ")
+(setq org-journal-time-prefix "* ")
 (setq org-journal-enable-agenda-integration t)
