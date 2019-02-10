@@ -5,7 +5,9 @@
     (notmuch-pim :location local)
     ;; create
     (org-pim :location local)
-    (org-journal :location melpa)
+    (org-journal :location (recipe
+                            :fetcher github
+                            :repo "bastibe/org-journal"))
     (journal-pim :location local)
     ;; out
     (org-octopress :location elpa)
