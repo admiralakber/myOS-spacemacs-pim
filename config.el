@@ -14,9 +14,7 @@
 (setq org-octopress-directory-top "~/Blog/src")
 
 ;;; Journal
-(setq 'org-journal-dir "~/Journal/")
-(setq 'org-journal-date-format "%Y-%m-%d [%Y-%W-%u %j]")
-(setq 'org-journal-time-format "%H:%M:%S+%z")
-(setq 'org-journal-date-prefix "%Y-%m-%d [%Y-%W-%u %j]")
-(setq 'org-journal-time-prefix "%H:%M:%S+%z")
-(setq 'org-journal-enable-agenda-integration t)
+(setq org-journal-dir "~/Journal/")
+(setq org-journal-date-format "Date: %Y-%m-%d [%Y-%W-%u %j]")
+(setq org-journal-time-format "Entry: %H:%M:%S%z")
+(setq org-journal-enable-agenda-integration t)
