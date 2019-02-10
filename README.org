@@ -32,7 +32,7 @@
 
   #+BEGIN_SRC shell
   git submodule -b master add https://github.com/admiralakber/myOS-spacemacs-pim ~/.emacs.d/private/pim
-  #+END_SRChttps://github.com/bastibe/org-journal
+  #+END_SRC
 
 ** 2. IMPORTANT Customize / Configure
 
