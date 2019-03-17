@@ -14,6 +14,7 @@
 
 ;;; Journal
 (setq org-journal-dir "~/Journal/")
+(setq org-journal-file-format "J%Y%m%d.org")
 (setq org-journal-date-format "<%Y-%m-%d> (%Y-%V-%u %j)")
 (setq org-journal-date-prefix (concat "#+TITLE: Journal Entry - " system-name "/\n"
                                       "#+AUTHOR: " user-full-name "\n"
