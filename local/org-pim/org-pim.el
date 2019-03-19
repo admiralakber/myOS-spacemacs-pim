@@ -1,7 +1,6 @@
 (provide 'org-pim)
 
-(spacemacs|use-package-add-hook org
-  :post-init
+(with-eval-after-load 'org
   ;; Proper code blocks
   (setq org-src-fontify-natively t)
   (setq org-src-tab-acts-natively t)
